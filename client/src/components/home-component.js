@@ -5,24 +5,18 @@ import LatestPost from "./latestPost-component.js";
 import QuickLinks from "./quick-links-component.js";
 import Suscripcion from "./suscripcion-row.js";
 
-
-function Home (props) {
-
+function Home(props) {
   const [article, setArticle] = useState([]);
 
-  useEffect( () =>{
-
+  useEffect(() => {
     getlastArticle();
-},[])
+  }, []);
 
+  async function getlastArticle() {
+    const res = await axios.get(`http://192.168.0.11:5000/articles/latest`);
+    setArticle(res.data);
+  }
 
-async function getlastArticle() {
-  const res = await axios.get(`http://192.168.0.7:5000/articles/latest`);
-  setArticle( res.data );  
-  
-  
-}
-  
   function renderlastArticle() {
     //this is for displaying divs of articles info
     return article.map((article) => {
@@ -30,17 +24,14 @@ async function getlastArticle() {
     });
   }
 
-
-    return (
-      <div id="homepage">
-        {renderlastArticle()}
-        <QuickLinks />
-        <Cards />
-        <Suscripcion />
-      </div>
-    );
-
+  return (
+    <div id="homepage">
+      {renderlastArticle()}
+      <QuickLinks />
+      <Cards />
+      <Suscripcion />
+    </div>
+  );
 }
-
 
 export default Home;

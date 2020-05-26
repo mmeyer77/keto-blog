@@ -75,7 +75,7 @@ html {
   /* border: solid 1px green; */
   font-family: Oswald;
 }
-.enfasis{
+.enfasis {
   color: var(--keto-cheese);
 }
 #root {
@@ -133,29 +133,28 @@ body {
 
 /* HOMEPAGE CARDS CSS */
 
-.wrap{
+.wrap {
   max-width: calc(100% - 20px);
-position: relative;
-margin: 0 auto;
+  position: relative;
+  margin: 0 auto;
 }
-.recetas-cards-container{
- display: flex;
- margin-left: -7px;
+.recetas-cards-container {
+  display: flex;
+  margin-left: -7px;
   margin-right: -11px;
   flex-direction: row;
 
-flex-wrap: wrap;
-  color:keto-
+  flex-wrap: wrap;
+  color: keto-;
 }
-.cards-bg{
+.cards-bg {
   margin-top: -10px;
   background-image: url("./avocado_cheese3.jpg");
   background-repeat: repeat;
-  
 }
 .recetas-cards-container .card {
-  width: calc(1/4 * 100% - 16px) !important;
-  
+  width: calc(1 / 4 * 100% - 16px) !important;
+
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4) !important;
   /* box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4) !important; */
   /* border-radius: 14px !important; */
@@ -168,11 +167,11 @@ flex-wrap: wrap;
   border: 0 !important;
   margin-bottom: 20px;
 }
-.card .card-body{
+.card .card-body {
   padding: 0.7rem;
 }
 
-.card-wrap-title{
+.card-wrap-title {
   padding-top: 18px;
   text-align: center;
   font-family: Oswald;
@@ -183,29 +182,27 @@ flex-wrap: wrap;
 
   border: 1px solid green;
 }
-.card-image:hover{
+.card-image:hover {
   opacity: 0.45;
-  
-  transition:ease-in-out 0.4s;
+
+  transition: ease-in-out 0.4s;
 }
-.dalgona-coffee .card-image{
-  
+.dalgona-coffee .card-image {
   background-image: url("./components/dalgona_coffee.jpg") !important;
 }
-.arroz-frito .card-image{
+.arroz-frito .card-image {
   background-image: url("./components/pancake_keto_750x750.jpg") !important;
-  
 }
-.flan-de-la-casa .card-image{
+.flan-de-la-casa .card-image {
   background-image: url("./components/dalgona_coffee.jpg") !important;
 }
-.keto-brownies .card-image{
+.keto-brownies .card-image {
   background-image: url("./components/pancake_keto.jpg") !important;
 }
 .card .card-image {
-  transition:ease-in-out 0.4s;
+  transition: ease-in-out 0.4s;
   /* max-height: 156px !important; */
-  min-height:  365px;
+  min-height: 365px;
   background-repeat: no-repeat !important;
   background-size: 100% !important;
   /* max-width: 100%;
@@ -421,8 +418,6 @@ flex-wrap: wrap;
   /* max-width:700px; */
   /*     max-height: 1000px;   */
 }
-
-
 
 .article-wrap {
   padding-top: 1rem !important;
@@ -763,202 +758,222 @@ footer .footer-widgets {
 /* MEDIA PORT PARA MOBILES MENOS DE 1024PX DE PANTALLA */
 
 @media (max-width: 1027px) {
-.wrapper{
-  max-width: calc(100% - 20px);
-  position: relative;
+  /* barra de suscripcion */
 
+  .suscripcion {
+    margin-top: 0;
+    background: var(--keto-blueberry);
+  }
 
-margin: 0 auto;
-}
- 
-.card-wrap{
-  max-width: calc(100% - 20px);
-  position: relative;
-color: ket;
+  .form__container {
+    color: #fff;
+  }
+  .form-row.sub {
+    max-width: 430px !important;
+    margin: 20px auto;
+  }
+  .form__container .titles {
+    text-align: center;
+    font-family: Oswald;
+    margin: 0 !important;
+    padding-top: 1px !important;
+  }
 
-margin: 0 auto;
-}
+  .col.sub-email {
+    max-width: calc(100% - 130px);
+    margin-bottom: 1rem;
+  }
 
-.recetas-cards-container{
-  margin-left: -7px;
-  margin-right: -7px;
-}
+  .col.sub-email .text-muted {
+    color: #fff !important;
+  }
+  .col.submit {
+    max-width: 130px;
+  }
+  .col.submit button {
+    transition: ease-in-out 0.4s;
+  }
+  .col.submit button:hover {
+    transform: scale(1.1);
+    background: var(--keto-cheese);
+    border: var(--keto-cheese);
+    transition: ease-in-out 0.3s;
+  }
+  /* fin barra de suscripcion */
 
-.recetas-cards-container .card{
-  width: calc(1/2 * 100% - 16px) !important;
- 
-} 
+  .wrapper {
+    max-width: calc(100% - 20px);
+    position: relative;
+
+    margin: 0 auto;
+  }
+
+  .card-wrap {
+    max-width: calc(100% - 20px);
+    position: relative;
+    color: ket;
+
+    margin: 0 auto;
+  }
+
+  .recetas-cards-container {
+    margin-left: -7px;
+    margin-right: -7px;
+  }
+
+  .recetas-cards-container .card {
+    width: calc(1 / 2 * 100% - 16px) !important;
+  }
 
   .entry-col img {
     display: none;
   }
-.quick-links{
-  margin: 16px 0 20px;
-}
-.quick-links-wrap{
-  display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-max-width: calc(100% - 37px);
-margin: 0 auto; 
-}
-.quick-links .quick-link{
-  flex-basis: 23%;
-  text-align: center;
-}
-.todo .quick-link-item::before{
-  margin-bottom: 0;
-}
-.quick-links .quick-link.todo{
-  flex-basis: 100%;
-  
-}
-.quick-links .todo .quick-link-item{
-  width: calc(100% - (24% - 140px));
-height: 70px;
-padding: 0em;
-margin-top: 10px;
-}
+  .quick-links {
+    margin: 16px 0 20px;
+  }
+  .quick-links-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: calc(100% - 37px);
+    margin: 0 auto;
+  }
+  .quick-links .quick-link {
+    flex-basis: 23%;
+    text-align: center;
+  }
+  .todo .quick-link-item::before {
+    margin-bottom: 0;
+  }
+  .quick-links .quick-link.todo {
+    flex-basis: 100%;
+  }
+  .quick-links .todo .quick-link-item {
+    width: calc(100% - (24% - 140px));
+    height: 70px;
+    padding: 0em;
+    margin-top: 10px;
+  }
 
-.quick-link-item:hover{
-  color: white;
-  transform: scale(1.1);
-  text-decoration: none;
- 
-}
-.quick-link-item{
-  width: 108px;
-height: 130px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width: 130px;
-height: 130px;
-margin: 0 auto 12px;
-font-weight: 700;
-font-size: 14px;
-line-height: 1;
-color: #000;
-background: #f9f9f9;
--webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,.10);
--moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,.10);
-box-shadow: 0 3px 6px 0 rgba(0,0,0,.10);
-border-radius: 70px;
-padding: 20px 12px;
-position: relative;
-text-decoration: none;
+  .quick-link-item:hover {
+    color: white;
+    transform: scale(1.1);
+    text-decoration: none;
+  }
+  .quick-link-item {
+    width: 108px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    color: #000;
+    background: #f9f9f9;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 70px;
+    padding: 20px 12px;
+    position: relative;
+    text-decoration: none;
+  }
 
-}
+  .quick-link-item::before {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 48px;
+    margin-bottom: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: 0.4s;
+  }
 
-.quick-link-item::before {
-  content: '';
-  display: block;
-  width: 72px;
-  height: 48px;
-  margin-bottom: 12px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition: .4s;
-}
+  .quick-link-item:hover {
+    background-color: var(--keto-blueberry);
+  }
 
-.quick-link-item:hover{
-  background-color:var(--keto-blueberry);
-}
- 
-.platos-principales .quick-link-item::before{
-  background-image:url(./pngs/quick-link-platos-principales.png);
- background-size:48px;
- 
-}
+  .platos-principales .quick-link-item::before {
+    background-image: url(./pngs/quick-link-platos-principales.png);
+    background-size: 48px;
+  }
 
-.platos-principales .quick-link-item:hover:before{
-  background-image:url(./pngs/quick-link-platos-principales_blanco.png);
-}
- 
+  .platos-principales .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-platos-principales_blanco.png);
+  }
 
-.desayunos .quick-link-item::before{
-  background-image:url(./pngs/quick-link-desayunos.png);
- background-size:48px;
- 
-}
-.desayunos .quick-link-item:hover:before{
-  background-image:url(./pngs/quick-link-desayunos_blanco.png);
-  background-size:48px;
- 
-}
+  .desayunos .quick-link-item::before {
+    background-image: url(./pngs/quick-link-desayunos.png);
+    background-size: 48px;
+  }
+  .desayunos .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-desayunos_blanco.png);
+    background-size: 48px;
+  }
 
-.acompanamientos .quick-link-item::before{
-  background-image:url(./pngs/quick-link-acompanamientos.png);
- background-size:48px;
- }
- .acompanamientos .quick-link-item:hover:before{
-  background-image:url(./pngs/quick-link-acompanamientos_blanco.png);
- 
- }
- .snacks .quick-link-item::before{
-  background-image:url(./pngs/quick-link-snacks.png);
- background-size:48px;
- 
-}
-.snacks .quick-link-item:hover:before{
-  background-image:url(./pngs/quick-link-snacks_blanco.png);
-  background-size:48px;
- 
-}
-.bebidas .quick-link-item::before{
-  background-image:url(./pngs/quick-link-bebidas.png);
- background-size:48px;
- 
-}
-.bebidas .quick-link-item:hover:before{
-  background-image:url(./pngs/quick-link-bebidas_blanco.png);
- background-size:48px;
- 
-}
-.postres .quick-link-item::before{
-  background-image:url(./pngs/quick-link-postres.png);
- background-size:48px;
- 
-}
-.postres .quick-link-item:hover:before{
-  background-image:url(./pngs/quick-link-postres_blanco.png);
- background-size:48px;
- 
-}
+  .acompanamientos .quick-link-item::before {
+    background-image: url(./pngs/quick-link-acompanamientos.png);
+    background-size: 48px;
+  }
+  .acompanamientos .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-acompanamientos_blanco.png);
+  }
+  .snacks .quick-link-item::before {
+    background-image: url(./pngs/quick-link-snacks.png);
+    background-size: 48px;
+  }
+  .snacks .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-snacks_blanco.png);
+    background-size: 48px;
+  }
+  .bebidas .quick-link-item::before {
+    background-image: url(./pngs/quick-link-bebidas.png);
+    background-size: 48px;
+  }
+  .bebidas .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-bebidas_blanco.png);
+    background-size: 48px;
+  }
+  .postres .quick-link-item::before {
+    background-image: url(./pngs/quick-link-postres.png);
+    background-size: 48px;
+  }
+  .postres .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-postres_blanco.png);
+    background-size: 48px;
+  }
 
-.sin-lactosa .quick-link-item::before{
-  background-image:url(./pngs/quick-link-sin-lactosa.png);
- background-size:48px;
- 
-}
-.sin-lactosa .quick-link-item:hover:before{
-  background-image:url(./pngs/quick-link-sin-lactosa_blanco.png);
- background-size:48px;
- 
-}
-.vegetariano .quick-link-item::before{
-  background-image:url(./pngs/quick-link-vegetariano.png);
- background-size:48px;
- 
-}
-.vegetariano .quick-link-item:hover:before{
-  background-image:url(./pngs/quick-link-vegetariano_blanco.png);
- background-size:48px;
- 
-}
-.todo .quick-link-item::before{
-  background-image:url(./pngs/quick-link-todo.png);
- background-size:48px;
- 
-}
-.todo .quick-link-item:hover:before{
-  background-image:url(./pngs/quick-link-todo_blanco.png);
- background-size:48px;
- 
-}
-
+  .sin-lactosa .quick-link-item::before {
+    background-image: url(./pngs/quick-link-sin-lactosa.png);
+    background-size: 48px;
+  }
+  .sin-lactosa .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-sin-lactosa_blanco.png);
+    background-size: 48px;
+  }
+  .vegetariano .quick-link-item::before {
+    background-image: url(./pngs/quick-link-vegetariano.png);
+    background-size: 48px;
+  }
+  .vegetariano .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-vegetariano_blanco.png);
+    background-size: 48px;
+  }
+  .todo .quick-link-item::before {
+    background-image: url(./pngs/quick-link-todo.png);
+    background-size: 48px;
+  }
+  .todo .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-todo_blanco.png);
+    background-size: 48px;
+  }
 
   header {
     height: 67px;
@@ -980,9 +995,8 @@ text-decoration: none;
     max-height: 316px;
   }
   .feature-container-flexbox {
-   
     display: flex;
-height: 100%;
+    height: 100%;
     flex-direction: row;
 
     flex-wrap: wrap;
@@ -999,21 +1013,16 @@ height: 100%;
     opacity: 0.45;
     width: 100%;
     z-index: 1;
-   
-      
-      
-      
-      top: auto;
-      background-color: transparent;
-      background-image: url("./components/pancake_keto.jpg");
-      background-repeat: no-repeat;
-        background-position: center;
-        
-       background-size: 100%;
-      width: 100%;
-      height: 396px;
-               
-    
+
+    top: auto;
+    background-color: transparent;
+    background-image: url("./components/pancake_keto.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: 100%;
+    width: 100%;
+    height: 396px;
   }
   a {
     background-color: transparent;
@@ -1021,7 +1030,6 @@ height: 100%;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
- 
 
   .feature-content {
     text-align: center;
@@ -1048,7 +1056,7 @@ height: 100%;
   }
 
   .feature-content-pre-titulo {
-    font-family: 'Sacramento', cursive, sans-serif;
+    font-family: "Sacramento", cursive, sans-serif;
     font-weight: 400;
     text-transform: lowercase;
     font-size: 26px;
@@ -1064,15 +1072,14 @@ height: 100%;
   }
   .ver-receta-container {
     margin-top: 0.8rem;
-    transition:ease-in-out 0.4s;
+    transition: ease-in-out 0.4s;
   }
   .ver-receta-container:hover {
     background-color: var(--keto-cheese);
     border: var(--keto-cheese);
     overflow: hidden;
     transform: scale(1.1);
-    transition:ease-in-out 0.4s;
-
+    transition: ease-in-out 0.4s;
   }
 
   .feature-layout-2 {
@@ -1090,46 +1097,39 @@ height: 100%;
     position: relative;
     height: 100%;
     z-index: 2;
-    
-
-   
-    
   }
 
   .feature-layout-2-wrap::before {
     display: table;
-z-index: 1;
-     content: " "; 
+    z-index: 1;
+    content: " ";
     overflow: hidden;
-   position: absolute;
+    position: absolute;
     top: auto;
     background-color: transparent;
     background-image: url("./components/keto_composition.jpg");
     background-repeat: no-repeat;
-      background-position:  left bottom;
-      opacity: 0.45;
-      /* opacity: 0.45; */
-     background-size: cover;
+    background-position: left bottom;
+    opacity: 0.45;
+    /* opacity: 0.45; */
+    background-size: cover;
     width: 100%;
     height: 100%;
   }
 
   .entry-col {
     margin-bottom: 15px;
-    
+
     position: relative;
 
     overflow: hidden;
     z-index: 1;
-    
+
     background-color: transparent;
-   
+
     width: 100%;
     height: 100%;
-    
   }
-
-  
 
   .entry-link {
     display: block;
@@ -1140,21 +1140,17 @@ z-index: 1;
     z-index: 3;
   }
 
-  
-
   .entry-col .pre-titulo {
     font-size: 26px;
     line-height: 1.7;
     font-weight: 400;
-    font-family: 'Sacramento', cursive, sans-serif;
+    font-family: "Sacramento", cursive, sans-serif;
     /* letter-spacing: 0.1em; */
     z-index: 2;
     top: 37%;
 
     text-transform: lowercase;
     position: absolute;
-
-    
 
     color: #fff;
 
@@ -1363,73 +1359,63 @@ z-index: 1;
 }
 
 @media (min-width: 1027px) {
+  .suscripcion {
+    margin-top: 0;
+    background: var(--keto-blueberry);
+  }
 
-.suscripcion{
-  margin-top: 0;
-  background:var(--keto-blueberry);
-}
+  .form__container {
+    color: #fff;
+  }
+  .form-row.sub {
+    max-width: 430px !important;
+    margin: 20px auto;
+  }
+  .form__container .titles {
+    text-align: center;
+    font-family: Oswald;
+    margin: 0 !important;
+    padding-top: 1px !important;
+  }
 
-.form__container{
-  color: #fff ;
-}
- .form-row.sub{
-  max-width: 430px !important;
-  margin: 20px auto;
-  
-}
-.form__container .titles{
-  text-align: center;
-  font-family: Oswald;
-  margin: 0 !important;
-  padding-top: 1px !important;
-}
+  .col.sub-email {
+    max-width: calc(100% - 130px);
+    margin-bottom: 1rem;
+  }
 
-.col.sub-email{
-  max-width: calc(100% - 130px);
-  margin-bottom: 1rem;
-}
+  .col.sub-email .text-muted {
+    color: #fff !important;
+  }
+  .col.submit {
+    max-width: 130px;
+  }
+  .col.submit button {
+    transition: ease-in-out 0.4s;
+  }
+  .col.submit button:hover {
+    transform: scale(1.1);
+    background: var(--keto-cheese);
+    border: var(--keto-cheese);
+    transition: ease-in-out 0.3s;
+  }
 
- .col.sub-email .text-muted{
-  color:#fff !important;
-}
-.col.submit{
-
-  max-width:  130px;
-  
-}
-.col.submit button{
-  transition:ease-in-out 0.4s;
-}
-.col.submit button:hover{
-  
-  transform: scale(1.1);
-  background: var(--keto-cheese);
-  border: var(--keto-cheese);
-  transition:ease-in-out 0.3s;
-  
-}
-
-
-
-
-
-  .quick-links{
+  .quick-links {
     margin: 12px 0 20px;
   }
-  .quick-links-wrap{
+  .quick-links-wrap {
     display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: space-between;
-  max-width: 1020px;
-  margin: 0 auto; 
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    max-width: 1020px;
+    margin: 0 auto;
   }
-  .quick-links .quick-link{
+  .quick-links .quick-link {
     flex-basis: 23%;
-    
+
     text-align: center;
   }
-  
-  .quick-link-item{
+
+  .quick-link-item {
     width: 108px;
     height: 130px;
     display: flex;
@@ -1450,20 +1436,19 @@ z-index: 1;
     position: relative;
     text-decoration: none;
     letter-spacing: 0.9px;
-  
   }
 
-  .quick-link-item:hover{
+  .quick-link-item:hover {
     text-decoration: none;
     color: #fff;
-    -webkit-box-shadow: 0 3px 7px 0 rgba(0,0,0,.17);
-  -moz-box-shadow: 0 3px 7px 0 rgba(0,0,0,.17);
-  box-shadow: 0 3px 7px 0 rgba(0,0,0,.17);
-  background-color:var(--keto-blueberry);
+    -webkit-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.17);
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.17);
+    background-color: var(--keto-blueberry);
   }
-  
+
   .quick-link-item::before {
-    content: '';
+    content: "";
     display: block;
     width: 72px;
     height: 48px;
@@ -1471,102 +1456,78 @@ z-index: 1;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    transition: .4s;
+    transition: 0.4s;
   }
- 
-   
-  .platos-principales .quick-link-item::before{
-    background-image:url(./pngs/quick-link-platos-principales.png);
-   background-size:43px;
-   
+
+  .platos-principales .quick-link-item::before {
+    background-image: url(./pngs/quick-link-platos-principales.png);
+    background-size: 43px;
   }
-  
-  .platos-principales .quick-link-item:hover:before{
-    background-image:url(./pngs/quick-link-platos-principales_blanco.png);
+
+  .platos-principales .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-platos-principales_blanco.png);
   }
-   
-  
-  .desayunos .quick-link-item::before{
-    background-image:url(./pngs/quick-link-desayunos.png);
-   background-size:43px;
-   
+
+  .desayunos .quick-link-item::before {
+    background-image: url(./pngs/quick-link-desayunos.png);
+    background-size: 43px;
   }
-  .desayunos .quick-link-item:hover:before{
-    background-image:url(./pngs/quick-link-desayunos_blanco.png);
-    background-size:43px;
-   
+  .desayunos .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-desayunos_blanco.png);
+    background-size: 43px;
   }
-  
-  .acompanamientos .quick-link-item::before{
-    background-image:url(./pngs/quick-link-acompanamientos.png);
-   background-size:43px;
-   }
-   .acompanamientos .quick-link-item:hover:before{
-    background-image:url(./pngs/quick-link-acompanamientos_blanco.png);
-   
-   }
-   .snacks .quick-link-item::before{
-    background-image:url(./pngs/quick-link-snacks.png);
-   background-size:43px;
-   
+
+  .acompanamientos .quick-link-item::before {
+    background-image: url(./pngs/quick-link-acompanamientos.png);
+    background-size: 43px;
   }
-  .snacks .quick-link-item:hover:before{
-    background-image:url(./pngs/quick-link-snacks_blanco.png);
-    background-size:43px;
-   
+  .acompanamientos .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-acompanamientos_blanco.png);
   }
-  .bebidas .quick-link-item::before{
-    background-image:url(./pngs/quick-link-bebidas.png);
-   background-size:43px;
-   
+  .snacks .quick-link-item::before {
+    background-image: url(./pngs/quick-link-snacks.png);
+    background-size: 43px;
   }
-  .bebidas .quick-link-item:hover:before{
-    background-image:url(./pngs/quick-link-bebidas_blanco.png);
-   
-   
+  .snacks .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-snacks_blanco.png);
+    background-size: 43px;
   }
-  .postres .quick-link-item::before{
-    background-image:url(./pngs/quick-link-postres.png);
-   background-size:43px;
-   
+  .bebidas .quick-link-item::before {
+    background-image: url(./pngs/quick-link-bebidas.png);
+    background-size: 43px;
   }
-  .postres .quick-link-item:hover:before{
-    background-image:url(./pngs/quick-link-postres_blanco.png);
-   
-   
+  .bebidas .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-bebidas_blanco.png);
   }
-  
-  .sin-lactosa .quick-link-item::before{
-    background-image:url(./pngs/quick-link-sin-lactosa.png);
-   background-size:43px;
-   
+  .postres .quick-link-item::before {
+    background-image: url(./pngs/quick-link-postres.png);
+    background-size: 43px;
   }
-  .sin-lactosa .quick-link-item:hover:before{
-    background-image:url(./pngs/quick-link-sin-lactosa_blanco.png);
-   
-   
+  .postres .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-postres_blanco.png);
   }
-  .vegetariano .quick-link-item::before{
-    background-image:url(./pngs/quick-link-vegetariano.png);
-   background-size:43px;
-   
+
+  .sin-lactosa .quick-link-item::before {
+    background-image: url(./pngs/quick-link-sin-lactosa.png);
+    background-size: 43px;
   }
-  .vegetariano .quick-link-item:hover:before{
-    background-image:url(./pngs/quick-link-vegetariano_blanco.png);
- 
-   
+  .sin-lactosa .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-sin-lactosa_blanco.png);
   }
-  .todo .quick-link-item::before{
-    background-image:url(./pngs/quick-link-todo.png);
-   background-size:43px;
-   
+  .vegetariano .quick-link-item::before {
+    background-image: url(./pngs/quick-link-vegetariano.png);
+    background-size: 43px;
   }
-  .todo .quick-link-item:hover:before{
-    background-image:url(./pngs/quick-link-todo_blanco.png);
-  
-   
+  .vegetariano .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-vegetariano_blanco.png);
   }
-  
+  .todo .quick-link-item::before {
+    background-image: url(./pngs/quick-link-todo.png);
+    background-size: 43px;
+  }
+  .todo .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-todo_blanco.png);
+  }
 
   /* INICIO CSS LATEST POST */
   .fondo-wrap {
@@ -1589,14 +1550,13 @@ z-index: 1;
     z-index: 1;
   }
 
-  .wrapper{
+  .wrapper {
     position: relative;
     max-width: 1020px;
     margin: 0 auto;
   }
 
   .wrap {
-
     position: relative;
     max-width: 1020px;
     margin: 0 auto;
@@ -1606,7 +1566,7 @@ z-index: 1;
     height: 450px;
   }
 
-  .card-wrap{
+  .card-wrap {
     position: relative;
     max-width: 1020px;
     margin: 0 auto;
@@ -1622,7 +1582,7 @@ z-index: 1;
     float: left;
 
     margin-top: 33px;
-    
+
     padding-bottom: 33px;
 
     position: relative;
@@ -1651,32 +1611,31 @@ z-index: 1;
     background-color: transparent;
     background-image: url("./components/pancake_keto.jpg");
     background-repeat: no-repeat;
-      background-position: center center;
-     background-size: 100%;
+    background-position: center center;
+    background-size: 100%;
     width: 100%;
     height: 396px;
-             
   }
-  .feature-image img{
+  .feature-image img {
     /* width: 100%;
     height: 100%; */
   }
   .feature-image a:hover {
     opacity: 1;
   }
-.feature-content::before{
-  content: '';
-position: absolute;
-top: 0;
-left: 0;
-height: 100%;
-width: 100%;
-background-image: url(./double-bubble.png);
-background-repeat: repeat;
-background-size: 100%;
-opacity: 0.57;
-z-index: 1;
-}
+  .feature-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(./double-bubble.png);
+    background-repeat: repeat;
+    background-size: 100%;
+    opacity: 0.57;
+    z-index: 1;
+  }
   .feature-content {
     flex-basis: 340px;
     display: flex;
@@ -1716,12 +1675,12 @@ z-index: 1;
     text-align: center;
 
     line-height: 1em;
-    
-    transition:ease-in-out 0.3s;
-      font-size: 16px;
-      text-transform: uppercase;
-      font-family: Oswald;
-      letter-spacing: 0.9px;
+
+    transition: ease-in-out 0.3s;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: Oswald;
+    letter-spacing: 0.9px;
   }
 
   .ver-receta-container:hover {
@@ -1729,12 +1688,12 @@ z-index: 1;
     border: var(--keto-cheese);
     overflow: hidden;
     transform: scale(1.1);
-    
-  transition:ease-in-out 0.3s;
+
+    transition: ease-in-out 0.3s;
   }
 
   .feature-content-pre-titulo {
-    font-family: 'Sacramento', cursive, sans-serif;
+    font-family: "Sacramento", cursive, sans-serif;
 
     font-weight: 400;
 
@@ -1776,10 +1735,9 @@ z-index: 1;
     margin-bottom: 15px;
     background-color: var(--keto-blueberry);
     position: relative;
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,.10);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
     height: 396px;
-    
   }
 
   .entry-col img {
@@ -1800,7 +1758,7 @@ z-index: 1;
 
     position: absolute;
 
-    font-family: 'Sacramento', cursive, sans-serif;
+    font-family: "Sacramento", cursive, sans-serif;
 
     color: #fff;
 
@@ -2211,46 +2169,39 @@ p {
 /* inicio media port por menos de 426px */
 @media (max-width: 428px) {
   .feature-content-wrap {
-   
     padding: 23px 37px 80px !important;
-    
   }
 
-  .quick-links-wrap{
+  .quick-links-wrap {
     max-width: 320px !important;
   }
 
-  .quick-links .quick-link.todo{
-
+  .quick-links .quick-link.todo {
     flex-basis: 100% !important;
-    
   }
-  .quick-links .todo .quick-link-item{
+  .quick-links .todo .quick-link-item {
     margin: 10px auto;
     /* width: calc(100% - (24% - 40px)) !important; */
     width: 100%;
-  height: 70px !important;
-  padding: 0em;
+    height: 70px !important;
+    padding: 0em;
   }
-  .quick-links .todo .quick-link-item{
+  .quick-links .todo .quick-link-item {
     width: 100% !important;
-  height: 130px;
+    height: 130px;
   }
 }
 /* fin media port por menos de 426px */
-@media (max-width: 555px){
-  .quick-links .quick-link.todo{
+@media (max-width: 555px) {
+  .quick-links .quick-link.todo {
     flex-basis: 23%;
-    
   }
-  .quick-links .todo .quick-link-item{
+  .quick-links .todo .quick-link-item {
     width: 130px;
-  height: 130px;
+    height: 130px;
   }
 
   .feature-content-wrap {
-   
     padding: 50px 37px 80px;
-    
   }
 }
