@@ -11,9 +11,9 @@ import Navbartest from "./components/navbar-test.js";
 import Footer from "./components/footer-component.js";
 import ArticlesList from "./components/articles-list.component.js";
 import Article from "./components/article-component.js";
-import Macro from "./components/Calculadora.js";
+// import Macro from "./components/Calculadora.js";
 import React from "react";
-import EmailRecetas from "./components/email-recetas.js"
+import EmailRecetas from "./components/email-recetas.js";
 
 library.add(fab, faUser);
 
@@ -26,7 +26,7 @@ function App() {
       )}                        */}
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/macro-calculator" component={Macro} />
+        {/* <Route path="/macro-calculator" component={Macro} /> */}
         <Route path="/posts" component={ArticlesList} />
         <Route path="/single/:id" component={Article} />
         <Route path="/recetas-keto-email/" component={EmailRecetas} />

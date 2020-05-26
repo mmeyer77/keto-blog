@@ -309,7 +309,7 @@ class KetoDietBuddy {
     return result;
   }
 }
-var core = this;
+
 //
 // Exports
 //
@@ -319,5 +319,3 @@ module.exports = {
   Gender: Gender,
   Warnings: Warnings,
 };
-
-export default core;
