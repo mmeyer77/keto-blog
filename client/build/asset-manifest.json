@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.371334c6.chunk.css",
+    "main.js": "/static/js/main.d809f324.chunk.js",
+    "main.js.map": "/static/js/main.d809f324.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1760d5bf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1760d5bf.js.map",
+    "static/js/2.9d019d08.chunk.js": "/static/js/2.9d019d08.chunk.js",
+    "static/js/2.9d019d08.chunk.js.map": "/static/js/2.9d019d08.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.314d583379a5cd3f01c6c1f2714de058.js": "/precache-manifest.314d583379a5cd3f01c6c1f2714de058.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.371334c6.chunk.css.map": "/static/css/main.371334c6.chunk.css.map",
+    "static/js/2.9d019d08.chunk.js.LICENSE.txt": "/static/js/2.9d019d08.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/static/media/pancake_keto_750x750.33fec84b.jpg",
+    "static/media/leche_almendras.jpeg": "/static/media/leche_almendras.f9aceecf.jpeg",
+    "static/media/pancake_keto_396x703.jpg": "/static/media/pancake_keto_396x703.4c69fd7b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1760d5bf.js",
+    "static/js/2.9d019d08.chunk.js",
+    "static/css/main.371334c6.chunk.css",
+    "static/js/main.d809f324.chunk.js"
+  ]
+}
