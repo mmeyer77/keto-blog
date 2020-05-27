@@ -14,7 +14,9 @@ export default class ArticlesList extends Component {
 
   async getArticles() {
     //pass array of all articles to front-end
-    const res = await axios.get("http://localhost:5000/articles/");
+    const res = await axios.get(
+      "http://ec2-18-223-20-99.us-east-2.compute.amazonaws.com/articles/"
+    );
     this.setState({ articles: res.data });
   }
 
