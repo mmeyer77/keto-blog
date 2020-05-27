@@ -13,7 +13,7 @@ router.route("/latest").get((req, res) => {
     .sort({ _id: -1 })
     .limit(1)
     .then((articles) => res.json(articles))
-    .catch((err) => res.status(400).json("Error: " + err));
+    .catch((err) => res.status(400).json("ErrorEsctricto: " + err));
 });
 
 router.route("/add").post((req, res) => {
