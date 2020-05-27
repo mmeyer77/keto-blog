@@ -33,8 +33,10 @@ mongoose.connect(
 );
 
 const articlesRouter = require("./routes/articles");
+const latestRouter = require("./routes/latest");
 const usersRouter = require("./routes/users");
 const adminRouter = require("./routes/admin");
+app.use("/articles/latest", latestRouter);
 app.use("/articles", articlesRouter);
 app.use("/users", usersRouter);
 app.use("/admin", adminRouter);
