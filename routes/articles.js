@@ -1,3 +1,4 @@
+"use strict";
 const router = require("express").Router();
 let Article = require("../models/article.model");
 
