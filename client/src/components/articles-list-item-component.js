@@ -70,7 +70,7 @@ class ArticlesListItem extends Component {
                 article={article}
                 props={article._id}
               >
-                {article.title}
+                {article.title}(Beta)
               </Link>
             </h2>
             <div className="article__tags">{this.renderTags(article.tags)}</div>
