@@ -65,7 +65,7 @@ class ArticlesListItem extends Component {
           <div className="card-body">
             <h2 className="card-header">
               <Link
-                href={this.onShowArticle}
+                to={{ pathname: `/single/${article._id}` }}
                 id={article._id}
                 article={article}
                 props={article._id}
