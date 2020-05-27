@@ -28,7 +28,7 @@ export default class Article extends Component {
 
   async getArticle() {
     const res = await axios.get(
-      `http://ec2-18-223-20-99.us-east-2.compute.amazonaws.com/articles/${this.props.match.params.id}`
+      `https://ketoparatubolsillo.com/articles/${this.props.match.params.id}`
     );
     this.setState({ article: res.data });
     this.setState({ ingredients: res.data.ingredients });
