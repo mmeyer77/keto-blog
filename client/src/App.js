@@ -1,6 +1,6 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import "./style.css"; //style css //all components have access to css with this import
 import { BrowserRouter as Router, Route } from "react-router-dom";
