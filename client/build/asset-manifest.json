@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.6a7069cc.chunk.css",
-    "main.js": "./static/js/main.6a5c269a.chunk.js",
-    "main.js.map": "./static/js/main.6a5c269a.chunk.js.map",
+    "main.css": "./static/css/main.9bbd4fa1.chunk.css",
+    "main.js": "./static/js/main.38c54b77.chunk.js",
+    "main.js.map": "./static/js/main.38c54b77.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.fa7ff747.js",
     "runtime-main.js.map": "./static/js/runtime-main.fa7ff747.js.map",
     "static/js/2.e61f6a89.chunk.js": "./static/js/2.e61f6a89.chunk.js",
     "static/js/2.e61f6a89.chunk.js.map": "./static/js/2.e61f6a89.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.95ca6d7c530f25851591f52e8249b7a4.js": "./precache-manifest.95ca6d7c530f25851591f52e8249b7a4.js",
+    "precache-manifest.b9a4c6e62469395c8102939c611607eb.js": "./precache-manifest.b9a4c6e62469395c8102939c611607eb.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.6a7069cc.chunk.css.map": "./static/css/main.6a7069cc.chunk.css.map",
+    "static/css/main.9bbd4fa1.chunk.css.map": "./static/css/main.9bbd4fa1.chunk.css.map",
     "static/js/2.e61f6a89.chunk.js.LICENSE.txt": "./static/js/2.e61f6a89.chunk.js.LICENSE.txt",
     "static/media/style.css": "./static/media/pancake_keto_750x750.33fec84b.jpg",
     "static/media/leche_almendras.jpeg": "./static/media/leche_almendras.f9aceecf.jpeg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.fa7ff747.js",
     "static/js/2.e61f6a89.chunk.js",
-    "static/css/main.6a7069cc.chunk.css",
-    "static/js/main.6a5c269a.chunk.js"
+    "static/css/main.9bbd4fa1.chunk.css",
+    "static/js/main.38c54b77.chunk.js"
   ]
 }

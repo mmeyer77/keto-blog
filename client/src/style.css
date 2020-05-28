@@ -30,6 +30,11 @@ a {
   color: #000;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 p {
@@ -1733,7 +1738,7 @@ footer .footer-widgets {
 
   .entry-col {
     margin-bottom: 15px;
-    background-color: var(--keto-blueberry);
+    background-color: #000;
     position: relative;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -1742,7 +1747,7 @@ footer .footer-widgets {
 
   .entry-col img {
     display: block;
-    opacity: 0.4;
+    opacity: 0.7;
     height: 500px;
   }
 

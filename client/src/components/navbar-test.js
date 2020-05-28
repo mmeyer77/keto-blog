@@ -9,7 +9,7 @@ class newNavbar extends Component {
   onShowArticle() {
     document
       .getElementById("mobile-menu")
-      .addEventListener("click", (window.location.pathname = "/articles"));
+      .addEventListener("click", (window.location.pathname = "/posts"));
   }
 
   render() {
@@ -158,7 +158,11 @@ class newNavbar extends Component {
             </ul>
           </div>
 
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <div
+            className="collapse navbar-collapse"
+            id="navbarNavDropdown"
+            aria-expanded="false"
+          >
             <ul id="navbar-mobile" className="navbar-nav mr-auto mt-2 mt-lg-0 ">
               <li
                 className="nav-item active"
@@ -168,7 +172,11 @@ class newNavbar extends Component {
                 <Link to="/">HOME</Link>
               </li>
 
-              <li className="nav-item dropdown">
+              <li
+                className="nav-item dropdown"
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown"
+              >
                 <Link
                   className="nav-link dropdown-toggle"
                   id="navbarDropdownMenuLink"

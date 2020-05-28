@@ -5,11 +5,9 @@ import fotoketo from "./pancake_keto_396x703.jpg";
 import axios from "axios";
 
 class LatestPost extends Component {
-  
-
   render() {
     // propiedad pasada desde el componente <ArticlesListItem article={article}
-    // const { article } = this.props; 
+    // const { article } = this.props;
     return (
       <div className="fondo-wrap">
         <div class="wrap">
@@ -29,9 +27,11 @@ class LatestPost extends Component {
                   <h2 class="feature-content-pre-titulo">Lo mas reciente</h2>
                   <h2 class="titulo-feature">{this.props.article.title}</h2>
                   <p>{this.props.article.subtitle}</p>
-                  <span class="btn btn-primary ver-receta-container">
-                    Ver Receta
-                  </span>
+                  <Link to={{ pathname: `/single/${this.props.article._id}` }}>
+                    <span class="btn btn-primary ver-receta-container">
+                      Ver Receta
+                    </span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -41,7 +41,11 @@ class LatestPost extends Component {
               <div class="feature-container-flexbox">
                 <div class="entry-col">
                   <Link onClick={this.onShowArticle} class="entry-link">
-                    <img src={fotoketo2} alt="Alimentos keto variados" className="foto-keto-desktop"></img>
+                    <img
+                      src={fotoketo2}
+                      alt="Alimentos keto variados"
+                      className="foto-keto-desktop"
+                    ></img>
                   </Link>
                   <p class="pre-titulo">Conoce mas</p>
                   <Link

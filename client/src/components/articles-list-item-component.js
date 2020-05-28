@@ -75,7 +75,7 @@ class ArticlesListItem extends Component {
             </h2>
             <div className="article__tags">{this.renderTags(article.tags)}</div>
             <br></br>
-            <span>Date Created: {this.renderDate(article.dateCreated)}</span>
+            <span>Date Created: {this.renderDate(article.createdAt)}</span>
           </div>
         </div>
       </article>
