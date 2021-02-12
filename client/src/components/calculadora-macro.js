@@ -85,7 +85,7 @@ const core = {
           this.bmr =
             9.99 * this.weight + 6.25 * this.height - 4.92 * this.age - 161;
           break;
-        case Gender.MALE:
+        case this.Gender.MALE:
           //
           // male:    9.99 x weight (kg) + 6.25 x height (cm) - 4.92 x age (y) + 5
           //
@@ -123,13 +123,13 @@ const core = {
       //
       switch (this.gender) {
         default:
-        case Gender.FEMALE:
+        case this.Gender.FEMALE:
           //
           // Source: wikipedia: 8% - 12%
           //
           this.essentialBodyFat = 8;
           break;
-        case Gender.MALE:
+        case this.Gender.MALE:
           //
           // wikipedia: 3% - 5%
           //
@@ -239,33 +239,33 @@ const core = {
       result.warnings = 0;
   
       if (this.bodyFatTooLow) {
-        result.warnings |= Warnings.LOW_BODYFAT;
+        result.warnings |= this.Warnings.LOW_BODYFAT;
       } else if (minimumFoodIntake >= this.maintenanceCalorieIntake) {
-        result.warnings |= Warnings.HIGH_CARBS;
+        result.warnings |= this.Warnings.HIGH_CARBS;
       }
   
       var nonEssentialFatMass =
         ((this.bodyfat - this.essentialBodyFat) * this.weight) / 100;
-      var maxFatInGrams = KetoDietBuddy.calculateFatIntakeInGrams(
+      var maxFatInGrams = this.KetoDietBuddy.calculateFatIntakeInGrams(
         this.maintenanceCalorieIntake,
         this.longTermProteinIntake,
         this.netCarbs
       );
       if (maxFatInGrams < 0) {
         maxFatInGrams = 0;
-        result.warnings |= Warnings.HIGH_CARBS;
+        result.warnings |= this.Warnings.HIGH_CARBS;
       }
   
       var minimumFoodIntake =
         this.maintenanceCalorieIntake - 69.2 * Math.max(0, nonEssentialFatMass);
-      var minFatInGrams = KetoDietBuddy.calculateFatIntakeInGrams(
+      var minFatInGrams = this.KetoDietBuddy.calculateFatIntakeInGrams(
         minimumFoodIntake,
         this.longTermProteinIntake,
         this.netCarbs
       );
       if (minFatInGrams < 30) {
         minFatInGrams = 30;
-        minimumFoodIntake = KetoDietBuddy.calculateCalorieIntakeFromMacronutrients(
+        minimumFoodIntake = this.KetoDietBuddy.calculateCalorieIntakeFromMacronutrients(
           minFatInGrams,
           this.longTermProteinIntake,
           this.netCarbs
@@ -275,37 +275,37 @@ const core = {
       var desirableFoodIntake =
         this.maintenanceCalorieIntake +
         (adjustment * this.maintenanceCalorieIntake) / 100;
-      var desirableFatInGrams = KetoDietBuddy.calculateFatIntakeInGrams(
+      var desirableFatInGrams = this.KetoDietBuddy.calculateFatIntakeInGrams(
         desirableFoodIntake,
         this.longTermProteinIntake,
         this.netCarbs
       );
       if (desirableFatInGrams < 0) {
         desirableFatInGrams = 0;
-        result.warnings |= Warnings.HIGH_CARBS;
+        result.warnings |= this.Warnings.HIGH_CARBS;
       }
   
-      result.maintenance = KetoDietBuddy.calculateMacronutrientRatio(
+      result.maintenance = this.KetoDietBuddy.calculateMacronutrientRatio(
         maxFatInGrams,
         this.longTermProteinIntake,
         this.netCarbs
       );
-      result.minimum = KetoDietBuddy.calculateMacronutrientRatio(
+      result.minimum = this.KetoDietBuddy.calculateMacronutrientRatio(
         minFatInGrams,
         this.longTermProteinIntake,
         this.netCarbs
       );
-      result.desirable = KetoDietBuddy.calculateMacronutrientRatio(
+      result.desirable = this.KetoDietBuddy.calculateMacronutrientRatio(
         desirableFatInGrams,
         this.longTermProteinIntake,
         this.netCarbs
       );
   
       if (result.desirable.gramsFat < 30) {
-        result.warnings |= Warnings.LOW_FATGRAMS;
+        result.warnings |= this.Warnings.LOW_FATGRAMS;
       }
       if (desirableFoodIntake < 1200) {
-        result.warnings |= Warnings.LOW_CALORIES;
+        result.warnings |= this.Warnings.LOW_CALORIES;
       }
   
       return result;
@@ -319,9 +319,9 @@ const core = {
 //
 
 module.exports = {
-  KetoDietBuddy: KetoDietBuddy,
-  Gender: Gender,
-  Warnings: Warnings,
+  KetoDietBuddy: this.KetoDietBuddy,
+  Gender: this.Gender,
+  Warnings: this.Warnings,
 };
 
 export default core;
