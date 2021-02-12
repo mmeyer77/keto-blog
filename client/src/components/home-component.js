@@ -17,7 +17,7 @@ function Home(props) {
 
   async function getlastArticle() {
     const res = await axios.get(
-      `http://18.223.20.99:5000/articles/latest`
+      `http://18.223.20.99/articles/latest`
     );
     setArticle(res.data);
   }

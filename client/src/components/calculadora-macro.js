@@ -318,10 +318,10 @@ const core = {
 // Exports
 //
 
-module.exports = {
-  KetoDietBuddy: this.KetoDietBuddy,
-  Gender: this.Gender,
-  Warnings: this.Warnings,
-};
+// module.exports = {
+//   KetoDietBuddy: this.KetoDietBuddy,
+//   Gender: this.Gender,
+//   Warnings: this.Warnings,
+// };
 
 export default core;
