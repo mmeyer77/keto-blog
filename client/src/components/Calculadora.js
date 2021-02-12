@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import ReactDOM from 'react-dom';
 import core from "./calculadora-macro.js";
 
-export class Macro extends React.Component {
+export default class Macro extends React.Component {
   constructor() {
     super();
 
