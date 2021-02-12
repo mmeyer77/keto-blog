@@ -5,7 +5,6 @@
   --nav-link-color: #888;
   --nav-link-color-hover: #000;
   --nav-height: 50px;
-
   --keto-cheese: #f9ab0d;
   --keto-milk: #6ed0e9;
   --keto-pepperoni: #ec1348;
@@ -35,6 +34,10 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+h1{
+  font-size: 32px;
 }
 
 p {
@@ -204,12 +207,9 @@ body {
   /* margin-top: 130px; */
 }
 
-#myCarousel {
-  left: 11%;
-  width: 77vw;
-  margin-top: 2%;
-  height: 700px !important;
-  overflow: hidden;
+.carousel__calculadora{
+  padding-top: 57px;
+  padding-bottom: 57px;
 }
 
 /* HOMEPAGE CARDS CSS */
@@ -268,24 +268,29 @@ body {
 
   transition: ease-in-out 0.4s;
 }
+
+.pancake-keto .card-image {
+  background-image: url("./components/img/5f42da0a071e496730375701.jpg") !important;
+}
+
 .dalgona-coffee .card-image {
-  background-image: url("./components/dalgona_coffee.jpg") !important;
+  background-image: url("./components/img/5ee93076071e4967303756ff.jpg") !important;
 }
-.arroz-frito .card-image {
-  background-image: url("./components/pancake_keto_750x750.jpg") !important;
+
+.champinones .card-image {
+  background-image: url("./components/img/5f42d94a071e496730375700.jpg") !important;
+  background-size: 130% !important;
 }
-.flan-de-la-casa .card-image {
-  background-image: url("./components/dalgona_coffee.jpg") !important;
-}
-.keto-brownies .card-image {
-  background-image: url("./components/pancake_keto.jpg") !important;
-}
+.keto-empanadas .card-image {
+  background-image: url("./components/img/5f42da83071e496730375702.jpg") !important;
+  background-size: 215% !important;
+} 
 .card .card-image {
   transition: ease-in-out 0.4s;
   /* max-height: 156px !important; */
   min-height: 365px;
   background-repeat: no-repeat !important;
-  background-size: 100% !important;
+  background-size: 100% ;
   /* max-width: 100%;
   width: 100% !important; */
   /* border-top-left-radius: inherit;
@@ -402,11 +407,10 @@ body {
   letter-spacing: 0.03rem;
 }
 .article__tags {
+  width: 100%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 120px));
-
-  margin-top: 1rem !important;
+  display: block;
+   margin-top: 1rem !important;
   /*  */
 }
 .article__tags__span {
@@ -418,29 +422,27 @@ body {
 
 .article__tags a {
   font-family: Oswald;
-  letter-spacing: 0.05rem;
-  font-size: 17px;
-  width: 120px !important;
-  background-color: #f2f2f2;
+  letter-spacing: 0.05rem; 
   text-decoration: none;
   color: #888;
-  padding: 0.3rem 0.5rem;
-  border-radius: 7px;
-  /* margin-bottom: 0.5rem !important;
-  margin: 0rem 0.5rem !important;
-  margin-top: 0.5rem !important; */
-  /*  */
-}
+    border-radius: 7px;
+  text-transform: uppercase;
+    padding: 1px 5px;
+    font-size: 10px;
+    text-align: center;
+    margin: .8%;
+    background: #f4f4f4;
+    display: inline-block;
+    float: left;
+ }
 
 .article__tags .Keto {
   font-family: Oswald;
   letter-spacing: 0.05rem;
   font-size: 17px;
-
-  background-color: #f2f2f2;
   text-decoration: none;
   color: #888;
-  padding: 0.3rem;
+  
   border-radius: 7px;
 }
 
@@ -504,6 +506,22 @@ body {
   padding-top: 1rem !important;
 }
 
+.lista__articulos .card{
+  text-align: center;
+  width: calc(1 / 4 * 100% - 16px) !important;
+  margin-top: 20px;
+  
+}
+
+.lista__articulos h2{
+  font-size: 20px;
+  margin-top: 0 !important;
+}
+.lista__articulos .card-image{
+  min-height: 240px !important;
+  max-height: 240px !important;
+}
+
 .article-wrap article .card {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
@@ -531,31 +549,167 @@ body {
 
   width: calc(100% -10px);
   border-radius: 14px;
-  background-image: url(https://restaurantthemedemo.files.wordpress.com/2011/10/syd-wachs-120739.jpg?w=1800);
+  
+}
+.carousel__row{
+  
+}
+.carousel__calculadora{
+  background-image: url(carousel_bg.png);
+  height: 300px;
+  text-align: center;
+  
+}
+.carousel__calculadora::before{
+  content: '';
+    display: block;
+    width: 33px;
+    height: 43px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: .4s;
+    margin: 0 auto;
+    background-image: url(macro-calculator.svg);
+    
+
 }
 
-footer {
-  background-color: var(--body-background);
-  padding-bottom: 10px;
+.item__overlay{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 165px;
+  -webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  height: 165px;
+  border-radius: 50%;
+  margin-left: 9px;
+ 
 }
+
+.item__overlay:hover {
+  opacity: 1;
+ 
+ 
+}
+
+
+.carousel__carousel{
+ 
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    
+   
+}
+.owl-nav button span{
+  font-size: 30px;
+}
+.owl-nav{
+  
+  top: -69px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.owl-stage-outer{
+  margin-top: 20px;
+}
+
+.owl-item .item{
+  text-align: center;
+}
+
+.owl-item .item span{
+  top: 95px;
+position: relative;
+color: white;
+display: none;
+}
+
+
+.owl-carousel .owl-item img{
+  width: 165px;
+}
+.owl-carousel img
+  {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: 30px;
+    width: 120px;
+    height: 165px;
+    margin-right: 15px;
+    border-radius: 50%;
+  
+}
+
+
+
+footer {
+  
+  color: white;
+  background-color:black;
+  padding-bottom: 10px;
+  
+}
+footer a{
+  color: white;
+  font-family: Oswald;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+footer h6{
+  letter-spacing: 1px;
+}
+footer .navbar-nav{
+  flex-direction: row !important;
+  justify-content: space-around;
+}
+
 footer .row {
+  align-items: center;
   justify-content: space-between;
   display: flex !important;
   flex-direction: row !important;
-
   margin: 0 auto;
   /*   justify-content:space-around; */
   /* padding: 24px; */
   padding-bottom: 14px;
 
-  border-bottom: 2px dotted rgba(0, 0, 0, 0.12);
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.77);
 }
+
+footer .fa-lg {
+  margin: 0 4px;
+  font-size: 31px;
+  
+}
+
+
 .footer-information {
   padding-top: 1px;
   display: flex;
   /*   align-items:center!important; */
   justify-content: space-between;
   max-height: 20px;
+}
+
+.social-container-desktop{
+  font-family: Oswald;
+  text-align: center;
+  
+
 }
 
 .footer-information li {
@@ -648,7 +802,7 @@ footer .footer-widgets {
   display: flex;
   flex-direction: row;
   max-width: 100%;
-  background: var(--keto-blueberry);
+  background:var(--keto-blueberry);
 }
 .form-section-horizontal {
   align-self: center;
@@ -670,12 +824,12 @@ footer .footer-widgets {
   padding: 0px 10px;
   margin: 0 0.5rem;
   justify-self: center;
-  border-radius: 12px 12px 12px 12px !important;
+  /* border-radius: 12px 12px 12px 12px !important; */
 }
 .form-section-horizontal button {
   font-weight: 400;
   color: #fff;
-  border-radius: 12px 12px 12px 12px !important;
+  /* border-radius: 12px 12px 12px 12px !important; */
   background: var(--keto-milk);
   border: 1px var(--keto-milk);
 }
@@ -880,15 +1034,58 @@ footer .footer-widgets {
     border: var(--keto-cheese);
     transition: ease-in-out 0.3s;
   }
-  /* fin barra de suscripcion */
+  /* Fin barra de suscripcion //////*/
 
   .wrapper {
     max-width: calc(100% - 20px);
     position: relative;
 
     margin: 0 auto;
+   
   }
 
+  /* Owl carousel */
+
+  .owl-nav {
+    display: none;
+  }
+
+  .owl-carousel .owl-item img{
+    width: 120px;
+    height: 120px;
+  }
+  
+  
+
+  .owl-item .item{
+    width: 120px;
+    height: 120px;
+  }
+  .item__overlay{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 120px;
+    height: 120px;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 1px;
+   
+  }
+
+  
+
+/*  Fin Owl carousel //////////////*/
   .card-wrap {
     max-width: calc(100% - 20px);
     position: relative;
@@ -1057,7 +1254,7 @@ footer .footer-widgets {
   }
 
   header {
-    height: 67px;
+    /* height: 67px; */
   }
   .fondo-wrap {
     position: relative;
@@ -1097,7 +1294,7 @@ footer .footer-widgets {
 
     top: auto;
     background-color: transparent;
-    background-image: url("./components/pancake_keto.jpg");
+     background-image: url("./components/img/5ee93076071e4967303756ff.jpg"); 
     background-repeat: no-repeat;
     background-position: center;
 
@@ -1276,19 +1473,13 @@ footer .footer-widgets {
   }
 
   .receta-header {
-    max-height: 98px;
+    /* max-height: 98px; */
   }
 
-  .receta-keto-header .nombre {
-    font-size: 2rem;
-    clear: both;
-    font-weight: 501;
-    width: 300px;
-    max-width: 100%;
-  }
+  
 
   .receta-keto-header {
-    max-height: 200px !important;
+    
     margin-bottom: 0;
   }
 
@@ -1444,6 +1635,8 @@ footer .footer-widgets {
     margin-top: 0;
     background: var(--keto-blueberry);
   }
+
+
 
   .form__container {
     color: #fff;
@@ -1635,6 +1828,7 @@ footer .footer-widgets {
     position: relative;
     max-width: 1020px;
     margin: 0 auto;
+    margin-bottom: 15px;
   }
 
   .wrap {
@@ -1690,10 +1884,10 @@ footer .footer-widgets {
     position: relative;
     top: auto;
     background-color: transparent;
-    background-image: url("./components/pancake_keto.jpg");
+    /* background-image: url("./components/pancake_keto.jpg"); */
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: 125%;
     width: 100%;
     height: 396px;
   }
@@ -2118,7 +2312,7 @@ p {
 
 .receta-keto-header {
   text-align: left;
-  min-height: 190px;
+  min-height: fit-content;
   margin-bottom: 16px;
 }
 
@@ -2273,7 +2467,15 @@ p {
   }
 }
 /* fin media port por menos de 426px */
-@media (max-width: 555px) {
+
+
+@media (max-width: 768px) {
+
+  h1{
+    font-size: 24px;
+  }
+
+
   .quick-links .quick-link.todo {
     flex-basis: 23%;
   }
@@ -2281,8 +2483,16 @@ p {
     width: 130px;
     height: 130px;
   }
+  .receta-title{
+    font-size: 24px;
+  }
 
   .feature-content-wrap {
     padding: 50px 37px 80px;
   }
+
+  .carousel__calculadora{
+    padding: 72px;
+  }
+
 }
