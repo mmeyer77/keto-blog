@@ -78,7 +78,7 @@ const core = {
       //
       switch (this.gender) {
         default:
-        case Gender.FEMALE:
+        case this.Gender.FEMALE:
           //
           // female: 9.99 x weight (kg) + 6.25 x height (cm) - 4.92 x age (y) - 161
           //
