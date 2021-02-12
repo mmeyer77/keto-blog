@@ -321,4 +321,3 @@ module.exports = {
 };
 
 
-export default core;
