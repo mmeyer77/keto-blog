@@ -319,3 +319,6 @@ module.exports = {
   Gender: Gender,
   Warnings: Warnings,
 };
+
+
+export default core;
