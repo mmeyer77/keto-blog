@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -77,7 +76,7 @@ export default class Footer extends Component {
                 <div className="footer-information">
                   <div className="align-left">
                     <small>
-                      Powered by
+                      Made with <i class="fas fa-heart"></i> by
                       <Link href="#" rel="nofollow">
                         Meyer Technologies
                       </Link>

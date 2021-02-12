@@ -3,7 +3,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import ArticlesListComponent from "./articles-list.component";
 import ArticlesListItem from "./articles-list-item-component";
-
 import foto from "./leche_almendras.jpeg";
 
 export default class Article extends Component {
@@ -28,7 +27,7 @@ export default class Article extends Component {
 
   async getArticle() {
     const res = await axios.get(
-      `https://ketoparatubolsillo.com/articles/${this.props.match.params.id}`
+      `http://18.223.20.99/articles/${this.props.match.params.id}`
     );
     this.setState({ article: res.data });
     this.setState({ ingredients: res.data.ingredients });
@@ -119,7 +118,7 @@ export default class Article extends Component {
         <main className="content">
           <article className="receta">
             <header className="receta-header">
-              <h1 className="receta-title">Leche de Nueces</h1>
+    <h1 className="receta-title">{this.state.article.title}</h1>
               <div className="receta-details">
                 <div class="receta-buttons">
                   <a
@@ -169,7 +168,7 @@ export default class Article extends Component {
                         </span>
                       </div>
                     </div>
-                    <h2 className="nombre">{this.state.article.title}</h2>
+                    <h1 className="nombre">{this.state.article.title}</h1>
                   </div>
 
                   <div className="receta-keto-info">
@@ -242,14 +241,10 @@ export default class Article extends Component {
           <section className="widget">
             <div className="widget-wrap">
               <div className="widget-image"></div>
-              <h3 className="widget-title"></h3>
+              <h3 className="widget-title">Menu</h3>
               <div className="widget-text">
-                <p> </p>
-                <span>
-                  <a class="more-link" href="">
-                    Leer Mas…
-                  </a>
-                </span>
+             
+                
               </div>
             </div>
           </section>

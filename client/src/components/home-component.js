@@ -4,20 +4,26 @@ import Cards from "./Cards.js";
 import LatestPost from "./latestPost-component.js";
 import QuickLinks from "./quick-links-component.js";
 import Suscripcion from "./suscripcion-row.js";
+import Carousel from "./carousel-component.js";
 
 function Home(props) {
   const [article, setArticle] = useState([]);
+  
 
   useEffect(() => {
     getlastArticle();
+    
   }, []);
 
   async function getlastArticle() {
     const res = await axios.get(
-      `https://ketoparatubolsillo.com/articles/latest`
+      `http://18.223.20.99:5000/articles/latest`
     );
     setArticle(res.data);
   }
+
+  
+
 
   function renderlastArticle() {
     //this is for displaying divs of articles info
@@ -32,6 +38,7 @@ function Home(props) {
       <QuickLinks />
       <Cards />
       <Suscripcion />
+      <Carousel/>
     </div>
   );
 }

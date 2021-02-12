@@ -49,7 +49,13 @@ export default class Macro extends React.Component {
     return (
       <div className="container">
         <h1>Calculadora de Macronutrientes </h1>
-        <p>Calculadora de Macronutrientes para la dieta cetogénica o keto</p>
+        <p>
+        Te presentamos la mejor calculadora de macronutrientes GRATUITA. Te permite calcular los macros necesarios para seguir el estilo de alimentación cetogénica (keto), o si prefieres, puedes escoger o personalizar la opción que se ajuste al estilo de alimentación que prefieras.
+</p>
+<p>Con esta herramienta podrás calcular la cantidad de grasas, proteínas y carbohidratos que debes consumir al día para alcanzar tus objetivos. La grasa tiene 9 calorías por gramo, y las proteínas y los carbohidratos tienen 4 calorías por gramo.
+</p>
+
+<p>Complete su información a continuación para saber cuántas calorías, carbohidratos, proteínas y grasas debe consumir por día para alcanzar sus objetivos, ya sea que quiera ganar masa muscular, mantenerse o perder peso. </p>
         <p>
           Inspirado en{" "}
           <a
@@ -473,6 +479,7 @@ class Results extends React.Component {
     } catch (ex) {
       return (
         <div>
+          <p>Calcular tus macronutrientes es el primer paso importante en tu viaje hacia el éxito con el estilo de alimentación cetogénico. Tienes la opción de tomar una ruta más fácil, y limitarte a consumir entre 20 a 30 gramos máximos de carbohidratos al día, o con la ayuda de nuestra calculadora, podrías ser más estricto con la ingesta de proteínas, grasas y calorías. Haz lo que funcione para ti y tus objetivos.</p>
           <textarea readOnly cols="64" rows="42" value={ex} />
         </div>
       );
@@ -522,7 +529,11 @@ class ResultsSection extends React.Component {
             value={macroPercEnergy}
           />
         </tbody>
+        
       </table>
+      
+
+      
     );
   }
 }
@@ -534,6 +545,8 @@ class ResultsSectionItem extends React.Component {
         <td>{this.props.name}</td>
         <td>{this.props.value}</td>
       </tr>
+
+
     );
   }
 }

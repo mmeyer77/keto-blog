@@ -39,11 +39,11 @@ class ArticlesListItem extends Component {
   renderTags(tags) {
     return tags.map((tag) => {
       return (
-        <span className="article__tags__span">
-          <Link href="#" className={tag} key={tag}>
+        <div className={tag}>
+          <Link href="#" key={tag}>
             {tag}
           </Link>
-        </span>
+        </div>
       ); // we need to prevent duplicated tags because of KEY{this.onShowArticle()}
     });
   }
@@ -51,15 +51,13 @@ class ArticlesListItem extends Component {
   render() {
     const { article } = this.props; // propiedad pasada desde el componente <ArticlesListItem article={article}
     return (
-      <article className="post-cards" key={this.props.article._id}>
-        <div className="card">
-          {/* <Link onClick={this.onShowArticle}> */}
+     
+        <div className="card sm-col-2 md-col-4" key={this.props.article._id}>
+         
           <Link onClick={this.onShowArticle}>
-            <img
-              src="https://restaurantthemedemo.files.wordpress.com/2020/01/restaurant-new-06.jpg"
-              className="card-img-top img-fluid"
-              alt="..."
-            ></img>
+          <div className="card-image" style={{backgroundImage: `url(${process.env.PUBLIC_URL+ `/img/${this.props.article._id}.jpg`})`}}>
+            
+            </div>
           </Link>
 
           <div className="card-body">
@@ -75,10 +73,11 @@ class ArticlesListItem extends Component {
             </h2>
             <div className="article__tags">{this.renderTags(article.tags)}</div>
             <br></br>
-            <span>Date Created: {this.renderDate(article.createdAt)}</span>
+            
           </div>
+          <span><small>{this.renderDate(article.createdAt)}</small></span>
         </div>
-      </article>
+      
     );
   }
 }

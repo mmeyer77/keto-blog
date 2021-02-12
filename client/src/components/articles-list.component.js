@@ -14,7 +14,7 @@ export default class ArticlesList extends Component {
 
   async getArticles() {
     //pass array of all articles to front-end
-    const res = await axios.get("https://ketoparatubolsillo.com/articles/");
+    const res = await axios.get("http://18.223.20.99/articles/");
     this.setState({ articles: res.data });
   }
 
@@ -26,6 +26,6 @@ export default class ArticlesList extends Component {
   }
 
   render() {
-    return <div className="article-wrap mx-auto">{this.renderList()}</div>;
+    return <div className="article-wrap wrapper lista__articulos">{this.renderList()}</div>;
   }
 }

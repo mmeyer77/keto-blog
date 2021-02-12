@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import fotoketo2 from "./keto_composition.jpg";
-import fotoketo from "./pancake_keto_396x703.jpg";
 import axios from "axios";
 
 class LatestPost extends Component {
@@ -13,7 +12,7 @@ class LatestPost extends Component {
         <div class="wrap">
           <div class="feature-layout-1">
             <div class="feature-container-flexbox">
-              <div class="feature-image">
+              <div style={{backgroundImage: `url(${process.env.PUBLIC_URL+ `/img/${this.props.article._id}.jpg`})` }} class="feature-image">
                 <Link onClick={this.onShowArticle}>
                   {/* <img
                     src={fotoketo}
